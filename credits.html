@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LabLet</title>
+	<link rel="stylesheet" type="text/css" href='Css/credits.css'>
+	<link rel="stylesheet" type="text/css" href='Css/header.css'>
+	<link rel="shortcut icon" href="Images/logo.png">
+	<meta name ='keywords' content="слепопечать, тренажёр, игра">
+</head>
+<body>
+	
+	<div class ='header'>
+		<img onclick="LoginMenu()"  src ='Images/ProfilePicture.png' id ='ProfilePicture'>
+		<ul id ='MenuButtons'>
+		<li > <a href="index.html">Главная </a> </li>
+		<li><a  href = 'leaderboard.html'>Рейтинг</a></li>
+		<li><a href="profile.html">Мой профиль</a></li>
+		<li><a id ='CurrentPageCredit' href="credits.html">О нас</a></li>
+		</ul>
+
+	</div>
+	<div id ='login'>
+		<p id ='Vhod'>Вход</p>
+		<form id ='login-form' onsubmit="return login(this)" method="post">
+		<input action="" method="post" placeholder="логин" id ='username' maxlength="16" type="text" name="username">
+	<br>
+		<input action="" method="post" id ='password' maxlength="16" placeholder="пароль" type="text" name="password">
+		<br>
+		<input type="submit" name="submit" value="Войти" id ='vhodButton' >
+	 </form>
+	 <ul class ='helpButtons' >
+	 <li><a href = 'PasswordReset.html' class ='helpButtons'>Забыли пароль?</a></li>
+	 <li><a href = 'logon.html' class ='helpButtons'>Зарегистрироваться</a></li>
+	</div>
+    <div id ='MainInfo'>
+    	<h2>Наша команда</h2>
+    	Над созданием сайта работали:
+    	<br>
+	    <div class ='credits'>
+	    	<img src="Images/ino.png" class ='creditsimg'>
+	    	<br>
+	    	<h4>Иннокентий Металлург</h4>
+    	</div>
+    	
+    	<div class ='credits'>
+	    	<img src='Images/pav.png' class ='creditsimg'>
+	    	<br>
+	    	<h4>Павел Пивовар</h4>
+    	</div>
+    	
+    	<div class ='credits' >
+	    	<img src='Images/morti.png'class ='creditsimg'>
+	    	<br>
+	    	<h4>morti</h4>
+    	</div>
+
+    	<div class ='credits' id="gleb">
+	    	<img src='Images/max.png' class ='creditsimg'>
+	    	<br>
+	    	<h4>Максим Пак</h4>
+    	</div>
+
+    	<br>
+    	Ответственный за backend:
+    	<br>
+    	<div >
+	    	<img src='Images/gleb.png' class="creditsimg" >
+	    	<br>
+	    	<h4>Глеб Нагирный</h4>
+	    </div>
+
+    
+
+    </div>
+
+ <script type="text/javascript" src='Js/login.js'></script>
+</body>
+</html>		

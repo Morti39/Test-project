@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LabLet</title>
+	<link rel="stylesheet" type="text/css" href='Css/leaderboard.css'>
+	<link rel="stylesheet" type="text/css" href='Css/header.css'>
+	<link rel="shortcut icon" href="Images/logo.png">
+	<meta name ='keywords' content="слепопечать, тренажёр, игра">
+
+</head>
+<body onload ='sort()'>
+	
+	<div class ='header'>
+		<img onclick="LoginMenu()"  src='Images/ProfilePicture.png' id ='ProfilePicture'>
+		<ul id ='MenuButtons'>
+		<li > <a href="index.html">Главная </a> </li>
+		<li><a id ='CurrentPageLead' href = 'leaderboard.html'>Рейтинг</a></li>
+		<li><a href="profile.html">Мой профиль</a></li>
+		<li><a href="credits.html">О нас</a></li>
+		</ul>
+
+	</div>
+	<div id ='login'>
+		<p id ='Vhod'>Вход</p>
+		<form id ='login-form' onsubmit="return login(this)" method="post">
+		<input action="" method="post" placeholder="логин" id ='username' maxlength="16" type="text" name="username">
+	<br>
+		<input action="" method="post" id ='password' maxlength="16" placeholder="пароль" type="text" name="password">
+		<br>
+		<input type="submit" name="submit" value="Войти" id ='vhodButton' >
+	 </form>
+	 <ul class ='helpButtons' >
+	 <li><a href = 'PasswordReset.html' class ='helpButtons'>Забыли пароль?</a></li>
+	 <li><a href = 'logon.html' class ='helpButtons'>Зарегистрироваться</a></li>
+	</div>
+    
+    <div id ='MainInfo'>
+    	<table id ='leaderboard'  >
+	    	<tr>
+	    		<td class="rank">1.</td>
+	    		<td class="player">Павел</td>
+	    		<td class="point">1337</td>
+	    	</tr>
+	    	<tr>
+	    		<td class="rank">2.</td>
+	    		<td class="player">Глеб</td>
+	    		<td class="point">666</td>
+	    	</tr>
+	    	<tr>
+	    		<td class="rank">3.</td>
+	    		<td class="player">Максим</td>
+	    		<td class="point">228</td>
+	    	</tr>
+
+    	</table>
+    </div>
+     <input type="file" id="fileInput">
+
+ <script type="text/javascript" src='Js/login.js'></script>
+  <script type="text/javascript" src ='../Js/leaderboard.js'></script>
+</body>
+</html>		

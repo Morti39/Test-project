@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LabLet</title>
+	<link rel="stylesheet" type="text/css" href='Css/header.css'>
+	<link rel="stylesheet" type="text/css" href='Css/mainpage.css'>
+	<link rel="shortcut icon" href='Images/ProfilePicture.png'>
+	<meta name ='keywords' content="слепопечать, тренажёр, игра">
+</head>
+<body>
+	
+	<div class ='header'>
+		<img onclick="LoginMenu()"  src= 'Images/ProfilePicture.png' id ='ProfilePicture'>
+		<ul id ='MenuButtons'>
+		<li > <a id ='CurrentPageMain' href="index.html">Главная </a> </li>
+		<li><a  href = 'leaderboard.html'>Рейтинг</a></li>
+		<li><a href="profile.html">Мой профиль</a></li>
+		<li><a href="credits.html">О нас</a></li>
+		</ul>
+
+	</div>
+	<div id ='login'>
+		<p id ='Vhod'>Вход</p>
+		<form id ='login-form' onsubmit="return login(this)" method="post">
+		<input action="" method="post" placeholder="логин" id ='username' maxlength="16" type="text" name="username">
+	<br>
+		<input action="" method="post" id ='password' maxlength="16" placeholder="пароль" type="text" name="password">
+		<br>
+		<input type="submit" name="submit" value="Войти" id ='vhodButton' >
+	 </form>
+	 <ul class ='helpButtons' >
+	 <li><a href = 'PasswordReset.html' class ='helpButtons'>Забыли пароль?</a></li>
+	 <li><a href = 'logon.html' class ='helpButtons'>Зарегистрироваться</a></li>
+	</div>
+    <div id ='MainInfo'>
+    	<div id= 'LoL'>labyrith of letters</div>
+    	<div id ='text'>- это тренажёр для слепопечати в игровом формате. В игре вам предстоит пройти лабиринт, но чтобы переместиться на другую клетку ван мужно будет нажать на клавиатуре соответствующую клетке клавишу.
+    	</div>
+
+    </div>
+
+ <script type="text/javascript" src= 'Js/login.js'></script>
+</body>
+</html>		

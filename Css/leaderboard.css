@@ -1,0 +1,25 @@
+table {
+	background:  #db7a5e;
+	background: rgba(219, 122, 94, 0.5);
+	border-radius: 5px ;
+	height: 15px;
+	width: 1070px;
+	border-collapse: collapse;
+	
+	
+}
+.rank {
+	width: 30px;
+}
+.player {
+	width: 970px;
+}
+.point {
+	width: 90px;
+	;
+}
+td {
+	border-bottom: rgba(219, 122, 94, 0.8) solid 5px;
+	padding: 3px;
+	
+}
